@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container-img2 {
+            background-image: 
+            linear-gradient(to bottom, rgba(123, 129, 131, 0.44), 
+            rgba(255, 255, 255, 0.077)),
+            url("../img/playground-left.png");
+          /*  background-image: url("../img/playground-left.png");*/
+        height:500px;
+        width:30%;
+        
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        }
+      .container-img {
+        background-image: url("../img/cells.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+      .filter1::before {
+        content: '';  
+        background-image:  url(../img/white-brushed.png);
+        top: 0;
+        height: 400px;
+        width:800px;
+        position: absolute;
+        background-position: top left;
+        animation: moving1 1s infinite;
+      }
+      .filter2::before {
+        content: '';  
+        background-image: url(../img/60-lines.png);
+        top: 0;
+        height: 400px;
+        width:800px;
+        position: absolute;
+        background-position: top left;
+        animation: moving2 20s infinite;
+      }
+    
+      .filter3::before {
+        content: '';  
+        background-image: url('../img/clean-textile.png');
+        top: 0;
+        height: 400px;
+        width:800px;
+        position: absolute;
+        background-position: top left;
+        animation: moving3 15s infinite;
+      }
+      .filter4::before {
+        content: '';  
+        background-image: url(../img/asfalt-light.png);
+        top: 0;
+        height: 400px;
+        width:800px;
+        position: absolute;
+        background-position: top;
+        animation: moving2 20s forwards;
+      }
+      @keyframes moving1 {
+          50% {
+              background-position: center;
+          }
+      }
+      @keyframes moving2{
+          50% {
+              background-position: bottom;
+          }
+      }
+      @keyframes moving3{
+          50% {
+              background-position: center;
+          }
+      }
+
+
+
+    </style>
+</head>
+<body>
+    
+   <div class="container-img filter1">
+
+   </div>
+
+   <div class="container-img filter2">
+
+    </div>
+    <div class="container-img filter3">
+
+    </div>
+    <div class="container-img2 filter4">
+
+    </div>
+
+    <div class="container-img3">
+        <img src="../img/underwater.png" />
+    </div>
+    <script>
+
+
+
+    </script>
+</body>
+</html>

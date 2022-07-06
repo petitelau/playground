@@ -1,0 +1,66 @@
+audio {
+    display: flex;
+    width: 25rem;
+}
+canvas {
+    background-image: url(../img/park-ball.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.5s;
+}
+
+.canvas-container::before {
+    content: '';  
+    background-image:  url(../img/asfalt-light.png);
+    top: 30%;
+    height: 50%;
+    width:100%;
+    position: absolute;
+    background-position: top left;
+    animation: moving1 5s infinite;
+}
+@keyframes moving1 {
+    50% {
+        background-position: center;
+    }
+}
+
+
+.canvas-container {
+    margin: 5rem 3rem;
+    width:100rem;
+    display:flex;
+    justify-content: flex-start;
+    transition: 1s;
+    align-items: flex-start;
+}
+
+img {
+    transition: 2s;
+    width:20rem;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    cursor: pointer;
+    object-fit: contain;
+}
+#st-hawk{
+    transform: scale(0.01);
+}
+
+
+.main-content {
+    margin: 2rem;
+    border: solid 0.7rem hsl(210, 84%, 34%);
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0.8px 5px 0.5rem 0.6rem rgb(0 0 0 / 40%);
+    min-width: 110rem;
+    min-height: 80rem;
+ }
+
+ .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+ }
