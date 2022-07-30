@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Playground</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Kalam:wght@300&display=swap" rel="stylesheet">
+        <link rel='icon' href='/img/favicon.png'>
+        <link rel='stylesheet' href='/css/styles.css'>
+         <link rel='stylesheet' href='/css/links.css'>
+
+        
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+               <div class="subheader-links box-header">
+                <div class="subheader-contents-links">
+               
+                    <img id="link-colors"  src="./img/colors.png" alt="colorblind application"
+                        onclick="window.location.href='https://colorblindtesting.web.app/'"/>
+                    <p  onclick="window.location.href='https://colorblindtesting.web.app/'"> 
+                   Testing colors app for color blind people</p>
+                
+                </div>
+                 <div class="subheader-contents-links cell2">
+                    <img id="link-colors"  src="./img/blackList.png" alt="crud application" />
+                    <p class="cell2"> CRUD app </p>
+                 </div>
+            </div>
+        </div>
+       
+    </body>
+
+    
+      <script src="/js/links.js" ></script>
+</html>

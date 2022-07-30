@@ -38,9 +38,9 @@ router.get("/about", (req, res) => {
   res.render("about", { ...hbsProperties, title: "About my Playground" });
 });
 
-router.get("/help", (req, res) => {
-  logger.info(`access to 'help' page`);
-  res.render("help", {
+router.get("/links", (req, res) => {
+  logger.info(`access to 'links' page`);
+  res.render("links", {
     ...hbsProperties,
     title: "Links to my sites",
   });

@@ -343,8 +343,11 @@ h2 {
 
  .tooltiptext {
   visibility: hidden;
-  background-color:  hsl(200, 63%, 61%);
-  color: #fff;
+  /*background-color:  hsl(200, 63%, 61%);*/
+  background-color: rgb(240, 226, 240);
+  width: 18rem;
+  font-size:12px;
+  color: hsl(210deg 84% 34%);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -353,14 +356,16 @@ h2 {
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top:45px;
-  left:-10px;
+  top:52px;
+  left:-22px;
 }
 
 #github:hover+.tooltiptext {
   visibility: visible;
+ 
 }
 
 #codepen:hover+.tooltiptext {
   visibility: visible;
+  left:10px;
 }

@@ -1,0 +1,39 @@
+.subheader-links {
+    display:grid;
+    grid-template-columns: 35rem 35rem;
+    padding: 5rem;
+    column-gap: 5rem;
+    justify-content: center;
+    margin: 5.8rem 10rem 5.8rem 5rem;
+    transition: .5s;
+}
+
+
+
+.subheader-contents-links{
+    background-color: hsl(210deg 84% 34%);
+    width: 35rem;
+    height: 15rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+} 
+    
+    #link-colors {
+        width:15rem;
+        margin:2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        margin: 1rem;
+        color: #eee;
+        font-variant-caps: petite-caps;
+        font-weight: 700;
+    }
+
+    .cell2 {
+        background-color:#eee;
+        color: hsl(210deg 84% 34%);
+    }
