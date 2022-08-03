@@ -16,11 +16,12 @@ router.get("/home", (req, res) => {
   res.render("home", { ...hbsProperties, title: "Playground" });
 });
 
-/*
-router.get("/github", (req, res) => {
-  logger.info(`go github page`); 
-  res.redirect("https://github.com/petitelau");
-});*/
+
+router.get("/um", (req, res) => {
+  logger.info(`go umbrella`); 
+  res.redirect("/umbrella.html");
+});
+
 
 router.get("/fun", (req, res) => {
   logger.info(`access to 'fun' page`);
@@ -31,6 +32,11 @@ router.get("/ball", (req, res) => {
   logger.info(`access to 'ball' page`);
   res.render("ball", { ...hbsProperties, title: "Ball" });
 });
+
+router.get("/umbrella",(req,res)=>{
+  logger.info(`access to 'umbrella' page`);
+  res.render("umbrella", { ...hbsProperties, title: "Balance" });
+})
 
 
 router.get("/about", (req, res) => {

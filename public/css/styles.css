@@ -57,7 +57,7 @@ body {
   --open-move: 100px;
   --anim-time: .1s;
   background-image: url("../img/playground-left.png");
-  animation: cloudy1 10s;
+  animation: cloudy1 3s;
   
 }
 #playground-right {
@@ -65,7 +65,7 @@ body {
   --open-move: 100px;
   --anim-time: .1s;
   background-image: url("../img/playground-right.png");
-  animation: cloudy2 10s;
+  animation: cloudy2 3s;
 }
 
 .filterDay::before {
@@ -76,7 +76,7 @@ body {
   width:500px;
   position: absolute;
   background-position: top;
-  animation: raining 10s forwards;
+  animation: raining 2s ;
 }
 @keyframes raining{
   90% {
@@ -98,6 +98,26 @@ body {
   }
   
 }
+
+.playground-r::after{
+  content:'';
+  width:4rem;
+  height:3.8rem;
+  background:hsl(210, 84%, 34%);
+  /*box-shadow: -8px 5px 4rem 0rem rgb(0 0 0 / 60%);*/
+  top:90%;
+  right: 10rem;
+  position:absolute;
+  border-radius: 50%;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  animation-name: ball;
+  animation-duration: 2s;
+}
+@keyframes ball {
+  100% { transform: translateX(8rem);}
+}
+
 
 .main-content {
    margin: 2rem;
@@ -162,7 +182,7 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-image: url('../img/subeybaja.png');
-  animation: cloudy3 20s;
+  animation: cloudy3 5s;
 }
 
 @keyframes cloudy3 {
@@ -172,9 +192,7 @@ body {
   
 }
 
-#link-ball {
-  cursor:pointer;
-}
+
 
 
 footer {
@@ -317,8 +335,11 @@ h2 {
   justify-content: center;
   transition: .5s;
 }
+
 .subheader-contents {
-  display:none;
+
+  cursor:pointer;
+
 }
 
 .logo{
