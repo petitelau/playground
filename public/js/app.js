@@ -1,4 +1,5 @@
 
+const homeLink =document.getElementById('home-link');
 const imgLeft = document.getElementById('playground-left');
 const imgRigth =document.getElementById('playground-right');
 const subeybaja = document.getElementById('subeybaja');
@@ -23,6 +24,8 @@ function playgroundAnimate() {
 
 function init(){
     document.body.onload = ()=> {
+        homeLink.classList.add('clicked');
+        homeLink.classList.remove('notClicked');
         console.log('onload')
         subeybaja.style.display = 'none';
         
@@ -50,9 +53,5 @@ function init(){
 init();
 const l = document.links;
 
-github.onclick = ()=>{
-    window.location = 'https://github.com/petitelau';
-}
-codepen.onclick = ()=>{
-    window.location = 'https://codepen.io/petitelau/pens/public';
-}
+
+

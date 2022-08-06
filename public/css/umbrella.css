@@ -125,7 +125,7 @@ html {
 #movingCont {
     position: absolute;
     width:0;
-    transform: translate(5rem, 28rem);
+    transform: translate(0rem, 48rem);
 }
 
 .movingContBye {

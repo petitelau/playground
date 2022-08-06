@@ -60,12 +60,96 @@
             transform: translate(5px, 5px);
             transition: .5s;
         }
+        body {
+         display:flex;
+         gap:10px;
 
+        }
+        .testing-gradients1{
+            width: 33%;
+            height: 100vh;
+            font-size: 3.2rem;
+            color:#eee;
+           
+/*background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+            background: radial-gradient( #FF7F00,#B85C00,#723800,#2B1500);*/
+            background-color: #a9a2ba;
+background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+
+background-color: #a486b0;
+background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+
+        }
+
+        .testing-gradients2{
+            width: 10%;
+background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png"), 
+linear-gradient(to top,#333,#eee,#777,#eee, #666); 
+border-width: 5px;
+/*border-image: linear-gradient(to top,#555,#eee,#aaa, #666) 30; */
+border-image-slice: 1 50%;
+/*linear-gradient(to right,#555, #777,#999,#aaa,#888, #c0c0c0);   */
+
+    border-style: solid;
+    border-image: linear-gradient(to top,#eee,#333,#888,#aaa, #333);
+    border-image-slice: 1 50%;
+    transform: rotate(125deg);
+
+
+        }
+        .testing-gradients3{
+            width: 30%;
+            background-color: #8977ba;
+/*background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");*/
+/*background-color: #4650c2;
+background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");*/
+background-color: #8977ba;
+background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");
+background-color: #53d665;
+background-color:#8dd699;
+background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+border-width: 5px;
+border-style: inset;
+border-image: linear-gradient(to top,#555,#eee,#aaa, #666); 
+border-image-slice: 1 50%;
+background-color: #388f22;
+
+  /*black orchid, ok green dark */
+background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png"), 
+radial-gradient(#388f22,#388f22,#1e5c09,#154206);
+    background-color: #206608;
+    background-image: url("https://www.transparenttextures.com/patterns/paven.png"),
+radial-gradient(#388f22,#388f22,#1e5c09,#154206);
+    background-color: #1e5c09;
+
+    /*light wool ok, more informatic look but not on diagonal*/
+background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"),
+radial-gradient(#388f22,#388f22,#1e5c09,#154206);
+
+background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png"),
+radial-gradient(#388f22,#388f22,#1e5c09,#154206);
+
+}
+
+.testing-gradients4{
+    width:10%;
+    background-color: #b32f2b;
+background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png");
+}
+
+
+      
     </style>
 </head>
 
-<body>
-    <div class="container1">
+<body >
+
+    <div class="testing-gradients1">hola</div>
+    <div class="testing-gradients2"></div>
+    <div class="testing-gradients3"></div>
+    <div class="testing-gradients4"></div>
+   
+ <!--   <div class="container1">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="500" height="500" viewBox="0 0 025 025">
             <path id="circulito" fill="transparent" stroke="transparent"
@@ -111,6 +195,10 @@
             </svg>
         </div>
     </div>
+
+   
+
+    </div>-->
     <script>
         const svgEl = document.querySelector(".container2 > svg");
         const svgLEl = document.querySelector(".container-l > svg");
