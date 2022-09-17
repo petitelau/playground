@@ -57,7 +57,7 @@ body {
   --open-move: 100px;
   --anim-time: .1s;
   background-image: url("../img/playground-left.png");
-  animation: cloudy1 3s;
+ /* animation: cloudy1 3s;*/
   
 }
 #playground-right {
@@ -65,9 +65,10 @@ body {
   --open-move: 100px;
   --anim-time: .1s;
   background-image: url("../img/playground-right.png");
-  animation: cloudy2 3s;
+ /* animation: cloudy2 3s;*/
 }
 
+/*
 .filterDay::before {
   content: '';  
   background-image: url(../img/asfalt-light.png);
@@ -97,7 +98,7 @@ body {
           url("../img/playground-right.png");    
   }
   
-}
+}*/
 
 .playground-r::after{
   content:'';
@@ -167,7 +168,7 @@ body {
   height: 648px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
-  box-shadow: 20px 8px 0.8px 0px hsl(210deg 84% 34%);
+  box-shadow: 20px 8px 0.8px 0 hsl(210deg 84% 34%);
   transition: var(--anim-time);
 }
 
